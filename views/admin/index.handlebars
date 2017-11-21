@@ -1,0 +1,31 @@
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<div class="col-md-12">
+<h2><span class="fa fa-user"></span> Users</h2>
+</div>
+<div class="col-md-11" style="height:400px;overflow-y: auto;">
+<table class="table table-sm">
+  <thead>
+    <tr>
+			<th>ID</th>
+      <th>Username</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each users}}
+      <tr>
+				<th>{{_id}}</th>
+        <th>{{username}}</th>
+        <td>{{firstName}}</td>
+        <td>{{lastName}}</td>
+        <td>{{email}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>

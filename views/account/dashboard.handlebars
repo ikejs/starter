@@ -1,0 +1,28 @@
+<div class="col-md-8 col-md-offset-2">
+  <h1><span class="fa fa-user"></span> Welcome, {{user.firstName}}!</h1>
+  <hr>
+  <div class="jumbotron">
+    <table class="table table-striped">
+    <tbody>
+      <tr>
+        <td>Username</td>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Email</td>
+        <td>_ID</td>
+        <td>Created At</td>
+        <td>Updated At</td>
+      </tr>
+      <tr>
+        <td>{{user.username}}</td>
+        <td>{{user.firstName}}</td>
+        <td>{{user.lastName}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user._id}}</td>
+        <td>{{user.createdAt}}</td>
+        <td>{{user.updatedAt}}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
